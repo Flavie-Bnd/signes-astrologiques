@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrologie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="astrologie.js" defer ></script>
+
+
+    <!-- defer = pour chargée le js après le html et eviter les bugs -->
+
+</head>
+<body>
+    <section id="signe-astrologique">
+    <h1>Découvrez votre signe astrologique</h1>
+
+    <label for="birthday">Entrez votre date de naissance :</label>
+
+    <input type="date" id="birthday" onkeypress="if(event.key === 'Enter') viewSigneAstrologique()">
+    
+    <button onclick="viewSigneAstrologique()">Trouver mon signe</button>
+
+<p id="result"></p>
+<img id="imageSigne" src="" alt="Image de votre signe astrologique" style="display:none; width:150px; height:150px;">
+    </section>
+
+</body>
+</html>
